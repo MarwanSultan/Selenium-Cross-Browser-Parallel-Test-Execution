@@ -43,11 +43,10 @@ public class BaseTest implements ElementLocator {
             driver = new FirefoxDriver();
         } else if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("ie")) {
-            driver = new InternetExplorerDriver();
+        } else if (browser.equalsIgnoreCase("edge")) {
+            driver = new EdgeDriver();
     
         }
-      //  driver = new FirefoxDriver();
 
 
         driver.get("https://www.amazon.com");
